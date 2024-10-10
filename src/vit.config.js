@@ -1,8 +1,10 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  server: {
-    host: true, // Allows connections from outside localhost
-    port: 4173 // This should match the port Render uses
-  }
+  base: "/123/", // Adjust this to your GitHub repository name
+  // Other configurations...
+  build: {
+    outDir: 'dist', // Specify the output directory if needed
+  },
+  // Any additional configurations can be added here
 });
